@@ -9,13 +9,28 @@ spring:
       transport:
         dashboard: 127.0.0.1:9100
       eager: true # 取消控制台懒加载
+      datasource:
+        flow:
+          nacos:
+            serverAddr: ${spring.cloud.nacos.server-addr}
+            dataId: ${spring.application.name}-flow-rules
+            groupId: SAMPLE_GROUP
+            ruleType: FLOW
+            username: nacos
+            password: nacos
     nacos:
       server-addr: 127.0.0.1:8848
       username: nacos
       password: nacos
+  jackson:
+    default-property-inclusion: NON_NULL
 
 management:
   endpoints:
     web:
       exposure:
         - "*"
+
+logging:
+  level:
+    root: debug #开启 debug 是学习需要，生产改为 info 即可
