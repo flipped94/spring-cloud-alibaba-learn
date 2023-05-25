@@ -1,13 +1,12 @@
-package com.flipped.learn.gateway;
-
+package com.flipped.learn.sentinelsample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GatewayApplication {
+public class SentinelSampleApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GatewayApplication.class, args);
+        SpringApplication.run(SentinelSampleApplication.class, args);
     }
 }
