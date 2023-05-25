@@ -1,5 +1,6 @@
 package com.flipped.learn.sentinelsample.service;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import org.springframework.stereotype.Service;
 
 /**
@@ -8,6 +9,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class SampleService {
     //模拟创建订单业务
+    //资源点名称为createOrder
+    @SentinelResource(value = "createOrder")
     public void createOrder() {
         try {
             //模拟处理业务逻辑需要101毫秒

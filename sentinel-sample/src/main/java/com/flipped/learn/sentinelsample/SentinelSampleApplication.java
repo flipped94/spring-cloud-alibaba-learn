@@ -11,4 +11,10 @@ public class SentinelSampleApplication {
     public static void main(String[] args) {
         SpringApplication.run(SentinelSampleApplication.class, args);
     }
+
+    // 注解支持的配置Bean
+    @Bean
+    public SentinelResourceAspect sentinelResourceAspect() {
+        return new SentinelResourceAspect();
+    }
 }

@@ -18,6 +18,15 @@ spring:
             ruleType: FLOW
             username: nacos
             password: nacos
+        degrade:
+          nacos:
+            serverAddr: ${spring.cloud.nacos.server-addr}
+            dataId: ${spring.application.name}-degrade-rules
+            groupId: SAMPLE_GROUP
+            ruleType: DEGRADE
+            username: nacos
+            password: nacos
+
     nacos:
       server-addr: 127.0.0.1:8848
       username: nacos
