@@ -1,0 +1,13 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: sample-service
+  cloud:
+    nacos:
+      discovery:
+        # 集群模式下地址以逗号分隔
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
