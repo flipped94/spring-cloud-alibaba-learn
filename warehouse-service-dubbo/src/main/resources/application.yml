@@ -1,0 +1,25 @@
+server:
+  port: 8006
+
+spring:
+  application:
+    name: warehouse-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+
+dubbo:
+  application:
+    name: warehouse-service
+  # Provider 与 Nacos 通信地址，与 spring.cloud.nacos 地址一致
+  registry:
+    address: nacos://127.0.0.1:8848
+  protocol:
+    name: dubbo
+    port: 20880
+  scan:
+    base-packages:
+      - com.flipped.learn.warehouseservicedubbo.dubbo

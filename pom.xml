@@ -19,6 +19,8 @@
         <module>consumer-service</module>
         <module>warehouse-service</module>
         <module>order-service</module>
+        <module>warehouse-service-dubbo</module>
+        <module>order-service-dubbo</module>
     </modules>
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
