@@ -23,6 +23,9 @@
         <module>order-service-dubbo</module>
         <module>gateway</module>
         <module>sentinel-sample</module>
+        <module>a-service</module>
+        <module>b-service</module>
+        <module>c-service</module>
     </modules>
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
