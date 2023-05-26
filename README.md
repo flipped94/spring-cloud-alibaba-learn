@@ -15,10 +15,7 @@
 - RocketMQ 实现服务异步通信
 
 ## 综合实战 [seata-mall]
-<p>某线上商城会员在购买商品的同时产生相应的消费积分，案例示意图如下</p>
-
-![案例示意图](./img/call.png)
-<div style="text-align: center;">案例示意图</div>
-
-![架构图](./img/architecture.png)
-<div style="text-align: center;">基于 Seata 的分布式事务架构</div>
+<p>某线上商城会员在购买商品的同时产生相应的消费积分，案例示意图如下:</p>
+<img src="img/call.png" style="zoom:65%" alt="案例示意图">
+<p>看整体架构图如下:</p>
+<img src="./img/architecture.png" style="zoom:65%" alt="基于 Seata 的分布式事务架构">
